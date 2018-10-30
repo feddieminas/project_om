@@ -8,11 +8,12 @@ html {
 body {
     height:100%;
     width:100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #F5F5F5;
 }
 
 .logo {
-    background: url('../images/hero-img.jpeg') no-repeat center center fixed;
+    background: url('../images/hero-img.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -76,6 +77,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
+    
+    transition:all 0.35s ease-in-out;
+    -moz-transition:all 0.35s ease-in-out;
+    -webkit-transition:all 0.35s ease-in-out;
+    -o-transition:all 0.35s ease-in-out;
 }
 
 /*
@@ -112,6 +118,7 @@ body {
 .nav .open>a, .nav .open>a:focus , .nav .open>a:hover { 
     background-color: rgba(51, 102, 255, .70);
     border-color: #337ab7;
+    
 }
 
 .dropdown-menu>li>a {
@@ -120,6 +127,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
+    
+    transition:all 0.35s ease-in-out;
+    -moz-transition:all 0.35s ease-in-out;
+    -webkit-transition:all 0.35s ease-in-out;
+    -o-transition:all 0.35s ease-in-out;
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
@@ -185,6 +197,11 @@ body {
     color:rgb(54, 69, 79);     
 }
 
+.hvr-sweep-to-right:before {
+    background:rgba(0,0,0,0.2);
+    min-height:25px; 
+}
+
 /* ----------------------------------------------------------- about_me.html */
 
 .jumbotron {
@@ -196,6 +213,22 @@ body {
 
 .social-links {
     padding-bottom:15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #0039A6; /* #0039A6 or #8f8f8f */
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 #aboutme-details {
@@ -374,10 +407,18 @@ audio {
 #bg-color-editorialslists {
     background-color: #f05f40; /* ID or !important rgb(213,43,30,0.6) */
     color:white;
-    margin-top: 30px; /* removed the two <br> as block dividers */
+    margin-top: 40px; /* removed the two <br> as block dividers */
+    min-height: 100px;
 }
 
 /* ----------------------------------------------------------- mygalleries_video.html */
+
+.glyphicon-triangle-right:before {
+    content: "\e250";
+    position: inherit;
+    left: -8px;
+    top: 5px;
+}
 
 .videosection {
     margin-top: 60px;
@@ -392,6 +433,10 @@ audio {
     margin-left: 0px; /*4em*/
 }
 
+.label-info {
+    background-color: navy;
+}
+
 #video-details div h3  {
     /* background: #e3e3e3; 
     margin: 50px 25px; 
@@ -399,7 +444,7 @@ audio {
     margin-top: 25px; /*ex 55 */
     margin-bottom: 10px;
     word-wrap: break-word;
-    text-align: left;
+    text-align: center; /* left */
     padding-top: 10px;
     line-height: 1.5;
 }
@@ -415,7 +460,7 @@ video {
 */
 
 #video-details>div>p {
-    text-align: left;
+    text-align: center; /* left */
     word-wrap:break-word;
 }
 
@@ -446,13 +491,14 @@ video {
 
 /* ----------------------------------------------------------- Media Queries (mobile - max 767, tablet - 768 to 991, desktop - 992 to 1800) */
 
-@media screen and (min-width: 992px) {
-    /*.logo {
+@media screen and (min-width: 992px) and (max-width:1800px) {
+    /*
+    .logo {
     background: url('../images/hero-img.jpeg') no-repeat center center fixed;
-    -webkit-background-size: 1200px 1400px;
-    -moz-background-size: 1200px 1400px;
-    -o-background-size: 1200px 1400px;
-    background-size: 1200px 1400px;
+    -webkit-background-size: 1800px 1400px;
+    -moz-background-size: 1800px 1400px;
+    -o-background-size: 1800px 1400px;
+    background-size: 1800px 1400px;
     height: 100vh;
     width: 100vw;
     -webkit-transition:all 0.5s ease-in-out;
@@ -461,6 +507,7 @@ video {
     transition:all 0.5s ease-in-out; 
     }
     */
+    
     
     /*
     .fashionlist {
