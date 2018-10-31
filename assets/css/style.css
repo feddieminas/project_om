@@ -62,7 +62,7 @@ body {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: rgb(54, 69, 79,0.5);
+    background-color: rgba(54, 69, 79, 0.5);
 }
 
 .navbar {
@@ -102,7 +102,7 @@ body {
 .nav>li>a:focus, .nav>li>a:hover { 
     text-decoration: none;
     color:white;
-    background-color: rgb(169,169,169,0.6); /* rgb(245,245,245,0.4) */
+    background-color: rgba(169,169,169,0.6); /* rgb(245,245,245,0.4) */
 }
 
 .nav li .dropdown-toggle:focus { /* added to distinct my galleries colours */
@@ -145,13 +145,13 @@ body {
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     color: #262626;
     text-decoration: none;
-    background-color: rgb(192,192,192,0.6); 
+    background-color: rgba(192,192,192,0.6); 
 }
 
 .dropdown-menu>.active>a { /* .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover */
     color: white;
     text-decoration: none;
-    background-color: rgb(21,27,31,0.8);
+    background-color: rgba(21,27,31,0.8);
     outline: 0;
 }
 
@@ -481,7 +481,7 @@ address {
 @media screen and (min-width: 992px) {
      #aboutme-details, #video-details>div>p {
         font-size: 16px;
-    }   
+    }
 }
 
 /*
