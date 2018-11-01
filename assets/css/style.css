@@ -221,6 +221,7 @@ body {
     
     font-weight: 200; /* Roboto */
     font-size: 14px;
+    min-width: 30%;
 }
 
 #aboutme-details img {
@@ -262,7 +263,7 @@ body {
     left: 8px;
 }
 
-.c .btn {
+.c .btn { /* kept it there */
     display: inline-block;
     padding: 0;
     margin-bottom: 0;
@@ -281,7 +282,7 @@ body {
     user-select: none;
     background-image: none;
     border: 0;
-    /* border-radius: 4px; */
+    /* border-radius: 4px; /* 
 }
 
 .modal-header  {
@@ -431,7 +432,7 @@ audio {
     margin-top: 5px; /*ex 25 */
     margin-bottom: 10px;
     word-wrap: break-word;
-    text-align: center; /* left */
+    text-align: justify;
     padding-top: 10px;
     line-height: 1.5;
 }
@@ -446,6 +447,8 @@ video {
     font-size: 12px;
     color: #000000;
     background:  #e3e3e3;
+    /*padding-right: 35px;*/
+    min-width: 30%;
 }
 
 #bg-color-editorialsvideos {
@@ -481,6 +484,7 @@ address {
 @media screen and (min-width: 992px) {
      #aboutme-details, #video-details>div>p {
         font-size: 16px;
+        min-width: 70%;
     }
 }
 
