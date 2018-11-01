@@ -112,9 +112,8 @@ and "hamb" button.
 An interesting issue that it came was that the audio buttons are displayed differently on other browsers, I tried it for ex. in Safari. Though the audio is playing. I find out an article about
 solving this issue but it is still displayed the same to me. The link article is [stackoverflow](https://stackoverflow.com/questions/24881807/html5-audio-on-safari-ios). However, I inserted both an
 mp3 and ogg audio for browser compatibility if any issue might occur and mp3 is not supported.
-Another issue was the Fashion list (mygalleries_audioslists.html). I used the relative and absolute position to place text list on a background image. As the same positions themselves have inner left, top etc
-and associated with the width to be responsive, it was quite challenging. The end result is quite intuitive but acceptable. Should be a better way by using calc method and width more dynamically to set more
-responsively the list inside the text centered to all devices.
+Another issue I encountered was with the Fashion list (mygalleries_audioslists.html) to make it responsive, as it was a background image and an inner list on a section. Thus when you resize the screen to see that it flows at a proper way.
+Finally, I spend time with the main navbar and the dropdown list to structure the colour, hierarchy and pseudo elements.  
 
 ## Deployment
 
