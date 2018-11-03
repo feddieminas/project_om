@@ -12,7 +12,7 @@ body {
     width:100%;
     font-family: 'Roboto', sans-serif; 
     font-weight: 400;    
-    background-color: #F5F5F5;
+    background-color: #F5F5F5; /* white grey */
 }
 
 .logo {
@@ -29,17 +29,9 @@ body {
     transition:all 0.5s ease-in-out; 
 }
 
-.flex-center { /* needed if had been placed a hero message text. This case not text inserted. */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
 /* ----------------------------------------------------------- Navbar */
 
 .navbar-brand, .navbar-brand:focus,.navbar-brand:hover {
-    /*font-weight: bold;*/
     color:white;
     font-family: 'Open Sans',sans-serif;
     font-weight: 700;
@@ -58,20 +50,17 @@ body {
     margin-top: 8px;
     margin-right: 15px;
     margin-bottom: 8px;
-    /* background-color: transparent; */
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: rgba(54, 69, 79, 0.5);
+    background-color: rgba(54, 69, 79, 0.5); /* hex no op. #36454f */
 }
 
 .navbar {
     margin-bottom: 0;
-    /* background-color: rgba(0, 0, 0, .25); */
-    background-color: rgba(51, 102, 255, .70); 
+    background-color: rgba(51, 102, 255, .70); /* hex no op. #3366ff */
     border: 0;
-    
-    font-size: 14px;  /* Roboto and font-weight:400 */
+    font-size: 14px;  /* Roboto - font-weight:400 */
 }
 
 #navbarhome {
@@ -92,41 +81,32 @@ body {
     -o-transition:all 0.35s ease-in-out;
 }
 
-/*
-.navbar-fixed-top .navbar-collapse {
-    background:transparent;
-    border-color:transparent;
-}
-*/
-
 .nav>li>a:focus, .nav>li>a:hover { 
     text-decoration: none;
     color:white;
-    background-color: rgba(169,169,169,0.6); /* rgb(245,245,245,0.4) */
+    background-color: rgba(169,169,169,0.6); /* hex no op. #a9a9a9 */
 }
 
 .nav li .dropdown-toggle:focus { /* added to distinct my galleries colours */
-    background-color: rgba(51, 102, 255, .70); 
+    background-color: rgba(51, 102, 255, .70); /* hex no op. #3366ff */ 
 }
 
-.active>a { /* , .nav>li>.active>a:focus, .nav>li>.active>a:hover */
+.active>a {
     text-decoration: none;
-    background-color: #0039A6;
+    background-color: #0039A6; /* dark blue */
     outline: 0;
     border-bottom: 3px solid black;
 }
 
 .dropdown-menu {
     margin-bottom: 0;
-    /* background-color: rgba(0, 0, 0, .25); */
-    background-color: rgba(245, 245, 245, .80);
+    background-color: rgba(245, 245, 245, .80); /* hex op. #f5f5f5 to be linear with body orig. colour */
     border: 0;    
 }
 
 .nav .open>a, .nav .open>a:focus , .nav .open>a:hover { 
-    background-color: rgba(51, 102, 255, .70);
+    background-color: rgba(51, 102, 255, .70); /* hex no op. #3366ff */
     border-color: #337ab7;
-    
 }
 
 .dropdown-menu>li>a {
@@ -145,13 +125,13 @@ body {
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     color: #262626;
     text-decoration: none;
-    background-color: rgba(192,192,192,0.6); 
+    background-color: rgba(192,192,192,0.6); /* hex no op. #c0c0c0 - darker grey */
 }
 
-.dropdown-menu>.active>a { /* .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover */
+.dropdown-menu>.active>a { 
     color: white;
     text-decoration: none;
-    background-color: rgba(21,27,31,0.8);
+    background-color: rgba(21,27,31,0.8); /* hex no op. #151b1f */
     outline: 0;
 }
 
@@ -161,27 +141,23 @@ body {
     margin-left: 4px;
 }
 
-.fa-home, .fa-pencil-square-o, .fa-envelope {
+.fa-home, .fa-pencil-square-o, .fa-envelope { /* nav items */
     font-size:1.2em;
     color:white;
 }
 
-.fa-picture-o, .fa-list, .fa-video-camera {
+.fa-picture-o, .fa-list, .fa-video-camera { /* dropdown items */
     font-size:1.2em;
     color:#36454f; 
 }
 
-.active.focused [class*="fa-"] {
-    color:white;
-}
-
-.fa-address-card {
-    color:rgb(54, 69, 79);     
+.active.focused [class*="fa-"] { /* class focused for MyGalleries dropdown items */ 
+    color:white; 
 }
 
 .hvr-sweep-to-right:before {
-    background:rgba(0,0,0,0.2);
-    min-height:25px; 
+    background:rgba(0,0,0,0.2); /* hex no op. #000000 */
+    min-height:25px;
 }
 
 /* ----------------------------------------------------------- about_me.html */
@@ -197,7 +173,8 @@ body {
     padding-bottom:15px;
 }
 
-.social-links li a i {
+.social-links li a i,
+.compweb i {
     width: 32px;
     height: 32px;
     padding: 12px 0;
@@ -205,8 +182,8 @@ body {
     font-size: 13px;
     line-height: 7px;
     text-align: center;
-    color: #fafafa;
-    background: #0039A6; /* #0039A6 or #8f8f8f */
+    color: #fafafa; /* white */
+    background: #0039A6; /* dark blue */
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -214,12 +191,11 @@ body {
 }
 
 #aboutme-details {
-    /* margin:10% 5px; */
     margin-top: 60px;
     margin-bottom: 10px; 
-    padding: 0px; /* new add */
+    padding: 0px; 
     
-    font-weight: 200; /* Roboto */
+    font-weight: 200;
     font-size: 14px;
     min-width: 30%;
 }
@@ -228,8 +204,24 @@ body {
     float:left;
     width:170px;
     min-height:170px;
-    /* margin-right:15px; */
     margin: 0px 15px 5px 0px;
+}
+
+#aboutme-details u {
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+.compweb, .compweb:focus { /* aboutme and contact section */
+    color: black;
+    text-decoration: none;
+}
+
+.compweb:hover {  /* aboutme and contact section */
+    font-weight:bold;
+    color: #0039A6; /* blue */
+    text-decoration: none;
 }
 
 /* ----------------------------------------------------------- mygalleries_img.html */
@@ -241,7 +233,7 @@ body {
 }
 
 .himg p {
-    font-weight: 100; /* Roboto */
+    font-weight: 100;
 }
 
 .glyphicon {
@@ -253,7 +245,7 @@ body {
     font-weight: 400;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; /* or antialiased */
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .glyphicon-triangle-bottom:before {
@@ -263,7 +255,7 @@ body {
     left: 8px;
 }
 
-.c .btn { /* kept it there */
+.c .btn {  /* adj compact modal background img btn presence */
     display: inline-block;
     padding: 0;
     margin-bottom: 0;
@@ -282,12 +274,11 @@ body {
     user-select: none;
     background-image: none;
     border: 0;
-    /* border-radius: 4px; */
-}
+} 
 
 .modal-header {
-    /* padding: 5px; */
     padding-top: 15px;
+    padding-bottom: 5px;
     border-bottom: 0;
     background-color: #F5F5F5;
 }
@@ -318,7 +309,6 @@ body {
     vertical-align: middle;
 }
 
-
 /* ----------------------------------------------------------- mygalleries_audioslists.html */
 
 audio { 
@@ -332,7 +322,7 @@ audio {
 }
 
 .fwadjust {
-    font-weight:200; /* Roboto */
+    font-weight:200;
 }
 
 .fashionlistimg {
@@ -345,45 +335,41 @@ audio {
 .fashionlistabs {
     position: absolute;
     left: 5%;
-    top: 25%; /* ex 40% */
-    width: calc(100% - 100px); /* new add */
-    /* word-break: break-all; */
+    top: 25%;
+    width: calc(100% - 100px);
 }
 
 .fashionlist {
     font-size: 20px;
     line-height: 2;
     padding-left: 32px; 
-    /* word-break: break-all; */
-    width: 710px; /* prev width: 100%; */
+    width: 710px;
 }
 
 .fashionlist>li {
     list-style-type:square;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* font-weight: 400;
-    color: rgb(0,0,128); */
     color: #000000;
     text-shadow: 2px 2px 4px #FFFFFF;
-    font-weight:300; /* Roboto */
+    font-weight:300;
 }
 
 .fashionlistimg img { 
     width: 100%;
     height: auto;
-    opacity: 0.4; /*0.4 or 0.5*/
+    opacity: 0.4;
 }
 
 #bg-color-editorialslists {
-    background-color: #f05f40; /* ID or !important rgb(213,43,30,0.6) */
+    background-color: #f05f40; /* red */
     color:white;
-    margin-top: 40px; /* removed the two <br> as block dividers */
+    margin-top: 40px;
     min-height: 100px;
 }
 
 .thumbnail p {
-    font-weight: 200; /* Roboto */
+    font-weight: 200;
 }
 
 .thumbnail .glyphicon-tag {
@@ -422,15 +408,15 @@ audio {
 }
 
 .videosection small {
-    font-weight: 200; /* Roboto */
+    font-weight: 200;
 }
 
 #video-details.row {
-    margin-left: 0px; /* 4em */
+    margin-left: 0px;
 }
 
 #video-details div h3  {
-    margin-top: 5px; /* ex 25 */
+    margin-top: 5px;
     margin-bottom: 10px;
     word-wrap: break-word;
     text-align: justify;
@@ -444,17 +430,16 @@ video {
 
 #video-details>div>p {
     word-wrap:break-word;
-    font-weight: 200; /* Roboto */    
+    font-weight: 200;  
     font-size: 12px;
     color: #000000;
-    background:  #e3e3e3;
-    /* padding-right: 35px; */
+    background:  #e3e3e3; /* darker grey */
     min-width: 30%;
 }
 
 #bg-color-editorialsvideos {
-    background-color: #f05f40; /* ID or !important rgb(213,43,30,0.6) */
-    margin-top: 30px; /* removed the two <br> as block dividers */
+    background-color: #f05f40; /* red */
+    margin-top: 30px;
 }
 
 #bg-color-editorialsvideos h2,
@@ -465,8 +450,11 @@ video {
 
 /* ----------------------------------------------------------- contact.html */
 
+.compweb i {
+    background: #8f8f8f; /* darker grey */ 
+}
+
 #contact-details {
-    /*margin:10% 10px;*/
     margin-top: 60px;
     margin-bottom: 10px;    
 }
@@ -477,11 +465,6 @@ address {
 
 /* ----------------------------------------------------------- Media Queries (mobile - max 767, tablet - 768 to 991, desktop - 992 to 1800) */
 
-/*
-@media screen and (min-width: 992px) and (max-width:1800px) {
-}
-*/
-
 @media screen and (min-width: 992px) {
      #aboutme-details, #video-details>div>p {
         font-size: 16px;
@@ -489,27 +472,22 @@ address {
     }
 }
 
-/*
-@media (min-width:801px) and (max-width:991px) {
-}
-*/
-
 @media screen and (max-width: 800px) {
-    .c {  /* mygalleries_img.html */
-        -ms-flex: 50%;
+    .c {  
+        -ms-flex: 50%; /* mygalleries_img.html and mygalleries_audioslists.html */
         flex: 50%;
         max-width: 50%;
     }
     
 }
 
-@media screen and (max-width: 767px) { /* hamb button */
-    .navbar-nav .open .dropdown-menu {
+@media screen and (max-width: 767px) { 
+    .navbar-nav .open .dropdown-menu { /* hamb button */
         position: static;
         float: none;
         width: auto;
         margin-top: 0;
-        background-color: rgba(245, 245, 245, .80);
+        background-color: rgba(245, 245, 245, .80); /* hex op. #f5f5f5 to be linear with body orig. colour */
         border: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -518,15 +496,11 @@ address {
     .fashionlistabs {
         position: absolute;
         left: 0;
-        top: 15%; /*25% for big, 15% for small */
-        /* word-break: break-all; */
+        top: 15%;
     }
     
     .fashionlist {
         font-size: 10px;
-        /* line-height: 2;
-        padding-left: 32px; */
-        /* word-break: break-all; */
         width: 290px;
     }
     
@@ -537,8 +511,8 @@ address {
 }
 
 @media screen and (max-width: 600px) {
-    .c {  /* mygalleries_img.html */
-        -ms-flex: 100%;
+    .c { 
+        -ms-flex: 100%; /* mygalleries_img.html and mygalleries_audioslists.html */
         flex: 100%;
         max-width: 100%;
     }
