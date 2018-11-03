@@ -12,7 +12,6 @@ Italy and France for business purposes. Her passion in fashion led her to become
   Target audience :
   - People surrounded by the fashion business
   - People that are passionate with fashion 
-  - People that are interested or needed (ex. business occasions) to get dressed very elegant
 
 - The scope plane: 
   - Features :
@@ -54,8 +53,7 @@ Italy and France for business purposes. Her passion in fashion led her to become
 - As a user : 
   - I want to see the hero's route in life and personality, have a clear image of the hero and get in touch if so, at a business and/or social level
   - On the about me section
-    - I want to see typography and semantic on few words, to capture briefly the hero's personal profile   
-    - I would like to see her social network there (apart from the contact section), to achieve instantly a speed of reaching that person on a shared platform
+    - I want to see typography and semantic in few words, to capture briefly the hero's personal profile   
 
 A mockup frame of the website, one could find it at the attached pdf file at the directory mockup_frame. 
 
